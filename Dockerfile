@@ -9,9 +9,10 @@ RUN apt-get update \
   telnet \
   unzip \
   wget \
+  && rm -rf /var/lib/apt/lists/* \
   && wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip \
   && unzip ngrok-stable-linux-amd64.zip \
-  && mv ./ngrok /usr/local/bin/ngrok
+  && mv ./ngrok /usr/local/bin/ngrok 
   
 
 RUN mkdir -p /var/log/supervisor
