@@ -3,10 +3,14 @@ FROM ubuntu
 RUN apt-get update \
   && apt-get install -y \
   curl \
+  dnsutils \
+  git \
   iputils-ping \
+  net-tools \
   nmap \
   supervisor \
   telnet \
+  traceroute \
   unzip \
   wget \
   && rm -rf /var/lib/apt/lists/* \
