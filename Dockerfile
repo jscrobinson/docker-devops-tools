@@ -6,6 +6,7 @@ RUN apt-get update \
   dnsutils \
   git \
   iputils-ping \
+  netcat \
   net-tools \
   nmap \
   supervisor \
